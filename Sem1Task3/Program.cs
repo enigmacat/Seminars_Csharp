@@ -24,7 +24,7 @@ if (inputLine != null)
     }
 
     Console.WriteLine(outDayOfWeek);
-    // 
+}
 
     // string[] dayOfWeek = new string[7];
     // dayOfWeek[0] = "Понедельник";
@@ -43,4 +43,3 @@ if (inputLine != null)
     // {
     //     Console.WriteLine(dayOfWeek[inputDayOfWeek - 1]);
     // }
-}
