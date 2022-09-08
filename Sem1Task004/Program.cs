@@ -39,4 +39,7 @@ if (inputLineA != null && inputLineB != null && inputLineC != null) //Прове
             Console.Write(inputNumberC);
         }
     }
+    // int max = Math.Max(inputNumberA, Math.Max(inputNumberB, inputNumberC));
+    // Console.Write("max = ");
+    // Console.WriteLine(max);
 }
