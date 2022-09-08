@@ -12,7 +12,7 @@ if (inputLineA != null && inputLineB != null)
 
     // bool outResult = (inputNumberB * inputNumberB == inputNumberA);
     // bool outResult = (inputNumberA / inputNumberB == inputNumberB);
-    bool outResult = (Math.Sqrt(inputNumberA) == inputNumberB);
+    bool outResult = (Math.Sqrt(inputNumberA) == inputNumberB);  // встроенная библиотека
 
     Console.WriteLine(outResult);
 }
