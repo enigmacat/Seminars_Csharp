@@ -16,7 +16,7 @@ int ReadData(string line)   // чтение данных из консоли
 
 bool TestPldrm(int pal)   // проверка на палиндром
 {
-    if (pal / 10000 == pal % 10 && pal / 1000 % 10 == pal / 10 % 10)
+    if (pal / 10000 == pal % 10 && (pal / 1000) % 10 == (pal / 10) % 10)
     {
         return true;
     }
