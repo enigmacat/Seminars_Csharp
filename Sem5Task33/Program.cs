@@ -80,7 +80,7 @@ int FindElmInArr(int[] arr, int elm)
     {
         if (arr[i] == elm)
         {
-            return i;
+            return index;
         }
     }
     return -1;
