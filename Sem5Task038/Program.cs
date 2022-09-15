@@ -53,7 +53,7 @@ void PrintResult(string line)
     Console.WriteLine(line);
 }
 
-double[] arr = FillArray(10, 0, 10);
+double[] arr = FillArray(20, 0, 30);
 Print1DArr(arr);
 double res = MaxMin(arr);
 PrintResult("Разница между max и min значениями элементов: " + res);
