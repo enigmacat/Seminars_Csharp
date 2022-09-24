@@ -10,11 +10,6 @@ int ReadData(string line)
     return number;
 }
 
-void PrintResult(string prefix, string data)
-{
-    Console.WriteLine(prefix + data);
-}
-
 int[,] Fill2DArray(int countRow, int countCol, int downBorder, int topBorder)
 {
     System.Random rand = new System.Random();
@@ -29,17 +24,17 @@ int[,] Fill2DArray(int countRow, int countCol, int downBorder, int topBorder)
     return arr2D;
 }
 
-// void Print2DArray(int[,] matr)
-// {
-//     for (int i = 0; i < matr.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matr.GetLength(1); j++)
-//         {
-//             Console.Write($"{matr[i, j]} ");
-//         }
-//         Console.WriteLine();
-//     }
-// }
+void Print2DArray(int[,] matr)
+{
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+        for (int j = 0; j < matr.GetLength(1); j++)
+        {
+            Console.Write($"{matr[i, j]} ");
+        }
+        Console.WriteLine();
+    }
+}
 
 void Print2DArrayColored(int[,] matr)
 {
@@ -59,5 +54,5 @@ int row= ReadData("Введите количество строк: ");
 int column= ReadData("Введите количество столбцов: ");
 int [,] arr2D= Fill2DArray(row,column,10,99);
 
-// Print2DArray(arr2D);
+Print2DArray(arr2D);
 Print2DArrayColored(arr2D);
