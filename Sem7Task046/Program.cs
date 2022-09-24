@@ -52,7 +52,9 @@ void Print2DArrayColored(int[,] matr)
 
 int row= ReadData("Введите количество строк: ");
 int column= ReadData("Введите количество столбцов: ");
+Console.WriteLine();
 int [,] arr2D= Fill2DArray(row,column,10,99);
 
 Print2DArray(arr2D);
+Console.WriteLine();
 Print2DArrayColored(arr2D);
