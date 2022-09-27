@@ -16,7 +16,7 @@ float factorial(int n)
 
 int i, n, c;
 Console.WriteLine("Введите число строк треугольника Паскаля: ");
-string s = Console.ReadLine();
+string s = Console.ReadLine()??"";
 n = Convert.ToInt32(s);
 for (i = 0; i < n; i++)
 {
@@ -33,12 +33,8 @@ for (i = 0; i < n; i++)
         // формула вычисления элементов треугольника
         Console.Write(factorial(i) / (factorial(c) * factorial(i - c)));
     }
-
     Console.WriteLine();
     // после каждой строки с числами пропускаем две пустые строчки
     Console.WriteLine();
 }
 Console.ReadLine();
-
-
-
