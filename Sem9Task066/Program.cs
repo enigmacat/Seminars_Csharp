@@ -22,7 +22,14 @@ int DigitSumRec(int m, int n)
 {
     if (m == n)
         return n;
-    return n + DigitSumRec(m, n - 1);
+    if (m < n)
+    {
+        return n + DigitSumRec(m, n - 1);
+    }
+    else
+    {
+        return n + DigitSumRec(m, n + 1);
+    }
 }
 
 int M = ReadData("Введите число M: ");

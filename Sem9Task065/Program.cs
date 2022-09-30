@@ -23,8 +23,7 @@ string RecMN(int M, int N)
     if (M < N)
         return M + " " + RecMN(M + 1, N);
     else
-
-        return N + " " + RecMN(N + 1, M);
+        return M + " " + RecMN(M - 1, N);
 }
 
 int M = ReadData("Введите число M: ");
